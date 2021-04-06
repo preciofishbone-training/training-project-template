@@ -1,1 +1,6 @@
 node_modules
+/.vs/training-project-template/config
+/.vs
+/*.code-workspace
+/dist/css/
+/dist/js/
