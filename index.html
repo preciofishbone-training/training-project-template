@@ -1,8 +1,158 @@
-<html>
+<!doctype html>
+<html lang="en">
 	<head>
-
+		<title>Project Nhe nhang na</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href ="./src/styles/pages/home-page.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link href="src/fontawesome-free-6.2.1-web/css/fontawesome.css" rel="stylesheet">
+		<link href="src/fontawesome-free-6.2.1-web/css/brands.css" rel="stylesheet">
+		<link href="src/fontawesome-free-6.2.1-web/css/solid.css" rel="stylesheet">
 	</head>
 	<body>
-		
+		<div class="container py-4 px-3 mx-auto">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+				<div class="container-fluid" >
+					<button 
+						class="navbar-toggler" 
+						type="button" 
+						data-bs-toggle="collapse" 
+						data-bs-target="#navbarSupportedContent" 
+						aria-controls="navbarSupportedContent" 
+						aria-expanded="false" 
+						aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent" >
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item" role="button">
+								<i class="bi bi-plus-lg"> New </i>
+								<i class="bi bi-chevron-down" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+							</li>
+							<li class="nav-item" role="button" >
+								<i class="bi bi-upload"> Upload </i>
+								<i class="bi bi-chevron-down" href="#" data-bs-toggle="dropdown" aria-expanded="false"></i>
+							</li>
+							<li class="nav-item" role="button">
+								<i class="bi bi-arrow-repeat"> Sync </i>
+							</li>
+							<li class="nav-item" role ="button">
+								<img src="excel.png" alt="Bootstrap" width="32" height="32" > Export to Excel
+							</li>
+					
+							<li class="nav-item dropdown" role="button">
+								<img src="flow.png" alt="Bootstrap" width="32" height="32"> Flow
+								<i class="bi bi-chevron-down" href="#" data-bs-toggle="dropdown" aria-expanded="false"> </i>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Action</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+									<li><hr class="dropdown-divider"></li>
+									<li><a class="dropdown-item" href="#">Something else here</a></li>
+								</ul>
+							</li>
+						</ul>
+    				</div>
+				</div>
+  			</nav>		
+		<h1 class = "document" >Document</h1>
+		<!-- <div class="table">
+			<div class="column"> 
+				<div class="row"> <i class="bi bi-file-earmark"> </i> </div>
+				<div class="row"> <i class="bi bi-folder-fill"></i> </div>
+				<div class="row"> <i class="fa-solid fa-file-excel"> </i> </div>
+				<div class="row"> <i class="fa-solid fa-file-excel"> </i> </div>
+				<div class="row"> <i class="fa-solid fa-file-excel"> </i></div>
+				<div class="row"> <i class="fa-solid fa-file-excel"> </i> </div>
+			</div>
+			<div class="column">
+				<div class="row"> Name <i class="bi bi-chevron-down" href="#" data-bs-toggle="dropdown" aria-expanded="false"> </i> </div>
+				<div class="row"> CAS </div>
+				<div class="row"> CoasterAndBargeLoading.xlsx </div>
+				<div class="row"> RevenueByService.xlsx </div>
+				<div class="row"> RevenueByService2016.xlsx </div>
+				<div class="row"> RevenueByService2017.xlsx </div>
+			</div>
+			<div class="column">
+				<div class="row"> Modified</div>
+				<div class="row"> April 30 </div>
+				<div class="row"> A few seconds ago </div>
+				<div class="row"> A few seconds ago </div>
+				<div class="row"> A few seconds ago </div>
+				<div class="row"> A few seconds ago </div>
+			</div>
+			<div class="column">
+				<div class="row"> Modified by </div>
+				<div class="row"> Megan Bowen </div>
+				<div class="row"> Administrator MOD </div>
+				<div class="row"> Administrator MOD </div>
+				<div class="row"> Administrator MOD </div>
+				<div class="row"> Administrator MOD </div>
+			</div>
+			<div class="column">
+				<div class="row"> Add column </div>
+				<div class="row">  </div>
+				<div class="row">  </div>
+				<div class="row"> </div>
+				<div class="row">  </div>
+				<div class="row">  </div>
+			</div>
+		</div> -->
+		<div class="table">
+			<div class="column">
+				<div class="row">  File Type </div>
+				<div class="row">  Name </div>
+				<div class="row"> <i class="fa-solid fa-file-excel"> </i> </div>
+				<div class="row"> <i class="fa-solid fa-file-excel"> </i> </div>
+				<!-- <div class="row"> <i class="fa-solid fa-file-excel"> </i></div>
+				<div class="row"> <i class="fa-solid fa-file-excel"> </i> </div> -->
+			</div>
+			<div class="column">
+				<div class="row"> Name <i class="bi bi-chevron-down" href="#" data-bs-toggle="dropdown" aria-expanded="false"> </i> </div>
+				<div class="row"> Modified </div>
+				<div class="row"> Modified by </div>
+				<div class="row"> RevenueByService.xlsx </div>
+				<div class="row"> RevenueByService2016.xlsx </div>
+				<div class="row"> RevenueByService2017.xlsx </div>
+			</div>
+			<div class="column">
+				<div class="row"> Modified</div>
+				<div class="row"> April 30 </div>
+				<div class="row"> A few seconds ago </div>
+				<div class="row"> A few seconds ago </div>
+				<div class="row"> A few seconds ago </div>
+				<div class="row"> A few seconds ago </div>
+			</div>
+			<div class="column">
+				<div class="row"> Modified by </div>
+				<div class="row"> Megan Bowen </div>
+				<div class="row"> Administrator MOD </div>
+				<div class="row"> Administrator MOD </div>
+				<div class="row"> Administrator MOD </div>
+				<div class="row"> Administrator MOD </div>
+			</div>
+			<div class="column">
+				<div class="row"> Add column </div>
+				<div class="row">  </div>
+				<div class="row">  </div>
+				<div class="row"> </div>
+				<div class="row">  </div>
+				<div class="row">  </div>
+			</div>
+			<!-- <div class="column">
+				<div class="row"></div>
+				<div class="row"></div>
+				<div class="row"></div>
+			</div> -->
+		</div>
+	</div>
 	</body>
 </html>
+
+
+

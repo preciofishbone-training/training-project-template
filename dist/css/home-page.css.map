@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"css/home-page.css","sourcesContent":[],"sourceRoot":""}
+{"version":3,"sources":["webpack:///./src/styles/pages/home-page.scss"],"names":[],"mappings":"AAAA;AACA;AACA;;AAEA;AACA;AACA;AACA;;AAEA;AACA;AACA;;AAEA;AACA;AACA,C","file":"css/home-page.css","sourcesContent":[".nav-item + .nav-item {\n  margin-left: 20px;\n}\n\n.nav-item {\n  display: flex;\n  align-items: center;\n}\n\n.bi {\n  margin-right: 0px;\n}\n\n.table {\n  margin-right: 10%;\n}"],"sourceRoot":""}
