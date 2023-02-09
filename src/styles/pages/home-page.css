@@ -1,15 +1,25 @@
 .nav-item {
+  justify-content: center;
+  flex-direction: row;
   display: flex;
   align-items: center;
-  padding: 10;
+  flex-wrap: nowrap;
 }
 
 .bi {
+  color: purple;
   font-style: normal;
   margin-right: 0px;
+  padding: 5px;
+}
+
+.text {
+  font-style: normal;
+  align-self: center;
 }
 
 .navbar-nav {
+  text-align: center;
   display: flex;
   flex-direction: column;
   flex: 0.5;
@@ -17,49 +27,113 @@
 }
 
 .table {
+  width: 100%;
   margin-top: 5%;
   display: grid;
 }
 
 @media (min-width: 576px) {
   .table {
-    display: flex;
+    margin-left: 5%;
+    display: grid;
+    width: 80%;
   }
 }
-.column {
-  justify-content: center;
-  margin-bottom: 1em;
-  width: 100%;
-}
-.column .column1 {
-  justify-content: center;
-  border-width: 2;
-  border-color: #111;
-  margin-right: 10%;
-  margin-bottom: 1em;
-  color: #111;
+.col {
+  width: flex;
 }
 
 .row {
   align-items: center;
-  border-bottom: 1px black solid;
+  border-bottom: 1px rgb(228, 223, 223) solid;
   height: 3em;
   margin: auto;
   width: 100%;
+  display: flex;
 }
-.row ::after {
-  border-top: 1px black solid;
-}
-.row + .row1 {
-  background-color: #00FF00;
-}
-
-.image {
-  width: 50%;
-  height: 50%;
-  size: auto;
+.row_1 {
+  align-items: center;
+  height: 3em;
+  margin: 3mm;
+  width: 100%;
+  display: flex;
+  border-bottom: 3px rgb(228, 223, 223) solid;
 }
 
 .fa-solid {
   color: #00FF00;
+}
+
+.document {
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    border: 1px solid #ccc;
+  }
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    text-align: right;
+  }
+  td:before {
+    text-align: left;
+    align-items: flex-end;
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  td:after {
+    background-color: #00FF00;
+  }
+  /*
+  Label the data
+  */
+  td:nth-of-type(1):before {
+    content: "File Type";
+  }
+  td:nth-of-type(2):before {
+    content: "Name";
+  }
+  td:nth-of-type(3):before {
+    content: "Modified";
+  }
+  td:nth-of-type(4):before {
+    content: "Modified by";
+  }
+  td:nth-of-type(5):before {
+    content: "Add column";
+  }
 }/*# sourceMappingURL=home-page.css.map */
