@@ -96,6 +96,7 @@ __webpack_require__.r(__webpack_exports__);
 
 (0,_utilities_helper__WEBPACK_IMPORTED_MODULE_0__["default"])(() => {
     (0,_components_grid__WEBPACK_IMPORTED_MODULE_1__["default"])();
+    var test = document.querySelector('a');
 });
 
 }();
